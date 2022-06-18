@@ -1,4 +1,4 @@
-/* Global settings */
+/*Start of Global settings */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
 *{
     margin: 0;
@@ -6,8 +6,9 @@
     box-sizing: border-box;
     font-family: 'Poppins',sans-serif;
 }
+/*End of Global settings */
 
-/* Navegarion Bar styling */
+/*Start of Navegarion Bar styling */
 
 a {
     color: #FFF;
@@ -15,7 +16,16 @@ a {
 }
 
 a:hover {
-    color: crimson;
+    color: #fbfd16 ;
+    transition: 0.3s ease-in;
+}
+
+
+.logo-name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .logo {
@@ -25,14 +35,13 @@ a:hover {
 }
 
 .logo-svg {
-    padding-top: 8px;
+    width: 40px;
 }
-
 nav {
     display: flex;
     justify-content:  space-around;
     background-color: black;
-    height: 8vh;
+    height: 10vh;
 }
 .nav-list{
     list-style: none;
@@ -45,6 +54,7 @@ nav {
 .nav-list li{
     letter-spacing: 3px;
     margin-left: 32px;
+    font-size: 30px;
 }
 .mobile-menu {
     display: none;
@@ -71,7 +81,7 @@ nav {
         top: 8vh;
         right: 0;
         width: 100vw;
-        height: 92vh;
+        height: 90vh;
         background-color: black;
         flex-direction: column;
         align-items: center;
@@ -84,6 +94,7 @@ nav {
     }
     .mobile-menu{
         display: block;
+        margin: auto 0;
     }
     .nav-list.active {
         transform: translateX(0);
@@ -99,3 +110,121 @@ nav {
         transform: rotate(45deg) translate(-5px, -7px);
     }
 }
+/* End of Navegarion Bar styling */
+/* Start of Hero SectionStyling */
+
+
+.main{
+    color: #FFF;
+    background: url(./Images/bg1.png) no-repeat center;
+    height: 200vh;
+}
+.main__container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.main__logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.main__logo h1:hover{
+    color: #fbfd16 ;
+    font-size: 120px;
+    transition: 0.7s ease-in;
+    text-shadow: 5px 5px #f9c322;
+    cursor: pointer;
+}
+
+
+.main__logo img{
+    width: 100px;
+}
+
+.main__content {
+    margin-top: 40px;
+    color: #f9c322; ;
+}
+.main__content h1{
+    font-size: 100px;
+    font-weight: 900;
+    color: #f9c322;
+    text-shadow: 3px 3px black; 
+}
+
+
+.main__content h2{
+    font-size: 80px;
+    font-weight: 800;
+    color: #fbfd16;
+    text-shadow: 3px 3px black;
+}
+
+
+.main__wrapper {
+    display: flex   ;
+    flex-direction: row;
+    gap: 20px;
+}
+.main__wrapper img {
+    width:  75%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    max-width: 400px;
+    max-height: 550px;
+
+}
+.main__wrapper h3 {
+    font-size: 70px;
+    font-weight: 700;
+    text-shadow: 2px 2px black;
+    
+}
+.product__title.blue{ 
+    color: #00297a;
+}
+.product__title.orange{ 
+    color: orange;
+}
+.product__title.orange:hover{ 
+    color: #fe441a;
+    font-size: 80px;
+    font-weight: 800;
+    transition: 0.3s ease-in;
+    text-shadow: 3px 3px orange;
+    cursor: pointer;
+}
+.product__title.blue:hover{ 
+    color: #17bcea;
+    font-size: 80px;
+    font-weight: 800;
+    transition: 0.3s ease-in;
+    text-shadow: 3px 3px #00297a;
+    cursor: pointer;
+    
+}
+.main__wrapper p{
+    font-size:70px;
+    font-weight: 800;
+    padding: 0 80px;
+    text-shadow: 3px 3px black;
+    color: #fbfd16 ;
+    line-height: 80px;
+}
+.main__wrapper img:hover{
+    max-width: 500px;
+    max-height: 650px;
+    transition: 0.5s ease-in-out;
+}
+/* End of Hero SectionStyling */
+
+/* Start of About us Styling */
+/* End of About us Styling */
